@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+
+.main-box {
+    background-image: url('images/img.jpg');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.main-box .slider_menu {
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    left: -280px; /* Initially hidden */
+    background: rgba(255,255,255,0.7);
+    box-shadow: 0 0 6px rgba(255,255,255,0.7);
+    transition: left 0.3s ease; /* Smooth transition */
+}
+
+#check:checked ~ .slider_menu {
+    left: 0; /* Slide in when checked */
+}
+
+.slider_menu .logo {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 6px rgba(255,255,255,0.7);
+}
+
+.slider_menu .logo a {
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    left: 50px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+.slider_menu .lis {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+
+.slider_menu .lis ul li {
+    margin-top: 5px;
+    padding: 20px;
+    transition: all 0.3s linear;
+    font-size: 20px;
+}
+
+.slider_menu .lis a {
+    color: black;
+    text-decoration: none;
+}
+
+.slider_menu .lis li:hover {
+    border-left: 1px solid black;
+    box-shadow: 0 0 4px rgba(255,255,255,0.7);
+}
+
+.main-box .social_media {
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    transform: translate(-50%);
+}
+
+.social_media i {
+    padding: 0 5px;
+    color: black;
+    opacity: 0.7;
+    font-size: 20px;
+}
+
+.social_media i:hover {
+    opacity: 1;
+}
+
+.btn-one {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.btn-one i:hover {
+    font-size: 24px;
+}
+
+.slider_menu .btn-two i {
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 240px;
+    cursor: pointer;
+}
